@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>T24 Logística S.A.</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root{
+      --amarillo: #ffda00;
+      --oscuro: #222;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color: var(--oscuro);
+      background: #fff;
+      padding-top: 70px;
+    }
+
+    /* Navbar */
+    .navbar-custom { background: var(--amarillo); }
+    .nav-link { color: #222 !important; font-weight: 600; }
+    .navbar-brand { color: #222 !important; font-weight: 800; }
+    .navbar-brand img { height: 40px; margin-right:10px; }
+
+    /* Hero */
+    .hero {
+      color: white;
+      min-height: 58vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.15)), 
+                  url('img/hero.jpg') center/cover no-repeat;
+    }
+    .hero h1 { text-shadow: 1px 1px 6px rgba(0,0,0,0.6); }
+
+    /* Secciones */
+    section { padding: 60px 0; }
+    .section-title { margin-bottom: 1.25rem; font-weight:700; }
+
+    /* Cards */
+    .service-card .card-body { min-height: 150px; }
+
+    /* Footer */
+    footer {
+      background: var(--amarillo);
+      color: #222;
+      padding: 20px 0;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:10px;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 576px) {
+      .hero { min-height: 40vh; padding: 2rem 1rem; }
+      body { padding-top: 120px; }
+    }
+
+    .btn-sm { padding: .25rem .5rem; font-size: .85rem; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#inicio">
+        <img src="img/logo.png" alt="Logo T24">
+        T24 Logística
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#empresa">La Empresa</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="#admin">Admin</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="inicio" class="hero">
+    <div class="container text-center">
+      <h1 class="display-5 fw-bold">Transporte y Logística de Confianza</h1>
+      <p class="lead">Soluciones integrales de almacenamiento, distribución y transporte en todo el país.</p>
+      <a href="#contacto" class="btn btn-dark btn-lg mt-2">Contactar</a>
+    </div>
+  </header>
+
+  <!-- LA EMPRESA -->
+  <section id="empresa">
+    <div class="container text-center">
+      <img src="img/logo.png" alt="Logo T24" style="height:80px; margin-bottom:20px;">
+      <h2 class="section-title">La Empresa</h2>
+    </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="lead">En <strong>T24 Logística S.A.</strong> ofrecemos servicios de transporte, depósito y administración de stocks. Somos una compañía argentina con enfoque en calidad, seguridad y cumplimiento de tiempos.</p>
+          <ul>
+            <li>Más de 15 años en el mercado.</li>
+            <li>Flota propia y depósitos seguros.</li>
+            <li>Atención a empresas y pymes.</li>
+          </ul>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="img/servicio_logistica.jpg" alt="T24 flota" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" style="background:#fff9cc;">
+    <div class="container">
+      <h2 class="section-title text-center">Nuestros Servicios</h2>
+      <div class="row gy-4">
+        <div class="col-md-6">
+          <div class="card service-card h-100 shadow-sm">
+            <img src="img/servicio_logistica.jpg" class="card-img-top" alt="logistica">
+            <div class="card-body">
+              <h5 class="card-title">Logística y Transporte</h5>
+              <p class="card-text">Coordinamos rutas y entregas con seguimiento, optimizando tiempos y costos.</p>
+              <a href="#contacto" class="btn btn-dark">Solicitar servicio</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card service-card h-100 shadow-sm">
+            <img src="img/servicio_deposito.jpg" class="card-img-top" alt="deposito">
+            <div class="card-body">
+              <h5 class="card-title">Depósito y Almacenamiento</h5>
+              <p class="card-text">Depósitos seguros, control de stock y gestión logística para tu inventario.</p>
+              <a href="#contacto" class="btn btn-dark">Solicitar depósito</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <div class="container">
+      <h2 class="section-title text-center">Contacto</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form id="contactForm" class="bg-white p-4 rounded shadow-sm">
+            <input type="hidden" id="editIndex" value="-1">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" id="nombre" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input type="text" id="telefono" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="consulta" class="form-label">Consulta</label>
+              <textarea id="consulta" rows="4" class="form-control" required></textarea>
+            </div>
+
+            <div class="d-flex gap-2">
+              <button type="submit" id="btnEnviar" class="btn btn-warning text-dark fw-semibold">Enviar solicitud</button>
+              <button type="button" id="btnCancelarEdicion" class="btn btn-outline-secondary" style="display:none;">Cancelar edición</button>
+            </div>
+
+            <div id="mensaje" class="mt-3" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADMIN -->
+  <section id="admin" style="background:#f8f9fa;">
+    <div class="container">
+      <h2 class="section-title text-center">Panel de Solicitudes (Admin)</h2>
+      <div class="table-responsive">
+        <table class="table table-striped" id="tablaSolicitudes">
+          <thead class="table-dark">
+            <tr>
+              <th>Nombre</th>
+              <th>Email</th>
+              <th>Teléfono</th>
+              <th>Consulta</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p class="text-muted small">Las solicitudes se almacenan localmente en este navegador (localStorage).</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <img src="img/logo.png" alt="Logo T24" style="height:40px;">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 T24 Logística S.A. | Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS CRUD -->
+  <script>
+    const form = document.getElementById('contactForm');
+    const nombreEl = document.getElementById('nombre');
+    const emailEl = document.getElementById('email');
+    const telefonoEl = document.getElementById('telefono');
+    const consultaEl = document.getElementById('consulta');
+    const mensajeEl = document.getElementById('mensaje');
+    const tablaBody = document.querySelector('#tablaSolicitudes tbody');
+    const editIndexEl = document.getElementById('editIndex');
+    const btnCancelarEdicion = document.getElementById('btnCancelarEdicion');
+    const btnEnviar = document.getElementById('btnEnviar');
+
+    let solicitudes = JSON.parse(localStorage.getItem('t24_solicitudes')) || [];
+
+    function renderSolicitudes() {
+      tablaBody.innerHTML = '';
+      if (!solicitudes.length) {
+        tablaBody.innerHTML = '<tr><td colspan="5" class="text-center">No hay solicitudes registradas.</td></tr>';
+        return;
+      }
+      solicitudes.forEach((s, idx) => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>${escapeHtml(s.nombre)}</td>
+          <td>${escapeHtml(s.email)}</td>
+          <td>${escapeHtml(s.telefono || '')}</td>
+          <td>${escapeHtml(s.consulta)}</td>
+          <td>
+            <button class="btn btn-sm btn-primary me-1" onclick="editarSolicitud(${idx})">Editar</button>
+            <button class="btn btn-sm btn-danger" onclick="borrarSolicitud(${idx})">Borrar</button>
+          </td>`;
+        tablaBody.appendChild(tr);
+      });
+    }
+
+    function guardarStorage() {
+      localStorage.setItem('t24_solicitudes', JSON.stringify(solicitudes));
+    }
+
+    function limpiarForm() {
+      form.reset();
+      editIndexEl.value = -1;
+      btnCancelarEdicion.style.display = 'none';
+      btnEnviar.textContent = 'Enviar solicitud';
+    }
+
+    function mostrarMensaje(text, tipo='success') {
+      mensajeEl.innerHTML = `<div class="alert alert-${tipo}" role="alert">${text}</div>`;
+      setTimeout(()=> mensajeEl.innerHTML='',3000);
+    }
+
+    function validarForm() {
+      return nombreEl.value.trim() && emailEl.value.trim() && consultaEl.value.trim();
+    }
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      if (!validarForm()) return mostrarMensaje('Por favor completá los campos requeridos.', 'danger');
+      const solicitud = {
+        nombre: nombreEl.value.trim(),
+        email: emailEl.value.trim(),
+        telefono: telefonoEl.value.trim(),
+        consulta: consultaEl.value.trim()
+      };
+      const idx = Number(editIndexEl.value);
+      if (idx >= 0) {
+        solicitudes[idx] = solicitud;
+        mostrarMensaje('Solicitud actualizada.');
+      } else {
+        solicitudes.push(solicitud);
+        mostrarMensaje('Solicitud enviada.');
+      }
+      guardarStorage();
+      renderSolicitudes();
+      limpiarForm();
+    });
+
+    window.borrarSolicitud = idx => {
+      if (!confirm('¿Querés eliminar esta solicitud?')) return;
+      solicitudes.splice(idx,1);
+      guardarStorage();
+      renderSolicitudes();
+      mostrarMensaje('Solicitud eliminada.','warning');
+    };
+
+    window.editarSolicitud = idx => {
+      const s = solicitudes[idx];
+      nombreEl.value = s.nombre;
+      emailEl.value = s.email;
+      telefonoEl.value = s.telefono;
+      consultaEl.value = s.consulta;
+      editIndexEl.value = idx;
+      btnCancelarEdicion.style.display='inline-block';
+      btnEnviar.textContent='Guardar cambios';
+      document.querySelector('#contacto').scrollIntoView({behavior:'smooth'});
+    };
+
+    btnCancelarEdicion.addEventListener('click', () => {
+      limpiarForm();
+      mostrarMensaje('Edición cancelada.','secondary');
+    });
+
+    function escapeHtml(str){
+      if(!str) return '';
+      return str.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#039;');
+    }
+
+    renderSolicitudes();
+
+    // Scroll active navbar
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = [...document.querySelectorAll('section, header')];
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY + 80;
+      for(const link of navLinks) link.classList.remove('active');
+      for(const sec of sections){
+        if(!sec.id) continue;
+        const top = sec.offsetTop;
+        const bottom = top + sec.offsetHeight;
+        if(y>=top && y<=bottom){
+          const a=document.querySelector('.nav-link[href="#'+sec.id+'"]');
+          if(a) a.classList.add('active');
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
